@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 300px;
+        background-color: #414b81;
+        flex-direction: column;
+      }
+      .above {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #fade8b;
+      }
+      .center {
+        width: 80px;
+        height: 50px;
+        background-color: #fade8b;
+      }
+      .below {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+      }
+      .left {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+      .right {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      .leftb {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+      .rightb {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="above">
+        <div class="left box"></div>
+        <div class="right box"></div>
+      </div>
+      <div class="center"></div>
+      <div class="below">
+        <div class="leftb box"></div>
+        <div class="rightb box"></div>
+      </div>
+    </div>
+  </body>
+</html>

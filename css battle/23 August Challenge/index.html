@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        background-color: #fade8b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .left {
+        background-color: #d2495c;
+        width: 100px;
+        height: 150px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 100%;
+      }
+      .right {
+        background-color: #d2495c;
+        width: 100px;
+        height: 150px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 100%;
+        position: relative;
+      }
+      .big {
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background-color: #f28997;
+        border-radius: 50%;
+        top: 5px;
+        right: 25px;
+      }
+      .small {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background-color: #f28997;
+        border-radius: 50%;
+        top: 30px;
+        right: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right">
+        <div class="big"></div>
+        <div class="small"></div>
+      </div>
+    </div>
+  </body>
+</html>

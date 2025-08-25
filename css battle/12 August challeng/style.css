@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7E6293;
+}
+.centerdiv {
+    width: 30px;
+    height: 200px;
+    background-color: #FFFFFF;
+    position: relative;
+    transform: rotate(20deg);
+}

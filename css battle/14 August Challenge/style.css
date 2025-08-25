@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #2b0202;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #006633; /* Dark Green */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.flag {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.green-field {
+    background-color: #006633; /* Dark Green */
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+}
+
+.white-stripe {
+    border: 2px solid green;
+    background-color: #ffffff;
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.moon-star {
+    position: absolute;
+    top: 50%;
+    left: calc(25% + (75% / 2)); /*Center of the green field */
+    transform: translate(-50%, -50%);
+}
+
+.crescent {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 #fff; 
+    transform: rotate(100deg);
+}
+
+.star {
+    position: absolute;
+    width: 10;
+    height: 10;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid #fff;
+    transform: rotate(35deg);
+    top: -5px;
+    left: 25px;
+}
+
+.star::after {
+    content: '⭐';
+    position: absolute;
+    color: white;
+    width: 10;
+    height: 10;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 35px solid #fff;
+    transform: rotate(70deg);
+    top: -30px;
+    left: -20px;
+}
+
+.message {
+    font-weight: bold;
+    color: #006633;
+    margin-top: 20px;
+}

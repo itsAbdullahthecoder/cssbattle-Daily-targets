@@ -1,0 +1,68 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    background-color: #41434b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 400px;
+    height: 300px;
+  }
+  .leftsqare {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+  }
+  .circle-left {
+    height: 30px;
+    width: 30px;
+    background-color: #41434b;
+    border-radius: 50%;
+    position: relative;
+    top: 35px;
+    left: 15px;
+  }
+  .rightsquare {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 70px;
+    right: 60px;
+  }
+  .circle-right {
+    height: 30px;
+    width: 30px;
+    background-color: #41434b;
+    border-radius: 100px;
+    position: relative;
+    top: 35px;
+    left: 15px;
+  }
+  .triangle {
+    background-color: #d95f5b;
+    clip-path: polygon(0 50%, 100% 50%, 50% 100%, 0% 50%);
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    top: 110px;
+  }
+</style>
+<div class="container">
+  <div class="leftsqare"><div class="circle-left"></div></div>
+  <div class="rightsquare"><div class="circle-right"></div></div>
+  <div class="triangle"></div>
+</div>

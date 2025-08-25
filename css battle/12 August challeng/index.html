@@ -1,0 +1,75 @@
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  .container {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e6293;
+    position: relative;
+  }
+  .centerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 215px;
+    background: #ffffff;
+    transform: rotate(15deg);
+    clip-path: polygon(-46% 5.4%, 96% 0%, 100% 96.2%, 0% 100%);
+
+    
+  }
+  .leftzero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 120px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 75px;
+    top: 50px;
+    border-radius: 53px 53px;
+  }
+  .leftzero .inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e6293;
+    height: 60px;
+    width: 30px;
+    border-radius: 60px;
+  }
+  .rightzero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 120px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 75px;
+    bottom: 50px;
+    border-radius: 53px 53px;
+  }
+  .rightzero .inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e6293;
+    height: 60px;
+    width: 30px;
+    border-radius: 60px;
+  }
+</style>
+<div class="container">
+  <div class="leftzero"><div class="inside"></div></div>
+  <div class="centerdiv"></div>
+  <div class="rightzero"><div class="inside"></div></div>
+</div>

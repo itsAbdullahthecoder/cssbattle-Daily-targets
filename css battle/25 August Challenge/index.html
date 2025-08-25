@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            width: 400px;
+            height: 300px;
+            background-color: #3A335A;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left, .center, .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+            margin: -40px;
+        }
+
+        .left{
+            transform: rotate(15deg);
+        }
+        .threeleft{
+            width: 140px;
+            height: 30px;
+            background-color: #FFFFFF;
+        }
+        .threecenter{
+            width: 140px;
+            height: 30px;
+            background-color: #FFFFFF;
+        }
+
+        .right{
+            transform: rotate(-15deg);
+        }
+        .threeright{
+            width: 140px;
+            height: 30px;
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="threeleft"></div>
+            <div class="threeleft"></div>
+            <div class="threeleft"></div>
+        </div>
+        <div class="center">
+            <div class="threecenter"></div>
+            <div class="threecenter"></div>
+            <div class="threecenter"></div>
+        </div>
+        <div class="right">
+            <div class="threeright"></div>
+            <div class="threeright"></div>
+            <div class="threeright"></div>
+        </div>
+    </div>
+</body>
+</html>

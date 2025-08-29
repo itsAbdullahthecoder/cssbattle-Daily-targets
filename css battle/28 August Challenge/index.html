@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        background-color: #b6ebe7;
+        position: relative;
+      }
+      #cont {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 85px;
+        left: 75px;
+      }
+      #container-three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+      #three {
+        width: 110px;
+        height: 30px;
+        background-color: #724faf;
+      }
+      #side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #square-shape {
+        width: 50px;
+        height: 50px;
+        background-color: #724faf;
+      }
+      #vertical-rod {
+        width: 10px;
+        height: 70px;
+        background-color: #724faf;
+      }
+      #two-rod {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        position: absolute;
+        top: 60px;
+        left: 30px;
+      }
+      #tworod {
+        width: 40px;
+        height: 10px;
+        background-color: #724faf;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cont">
+        <div id="two-rod">
+          <div id="tworod"></div>
+          <div id="tworod"></div>
+        </div>
+        <div id="side">
+          <div id="square-shape"></div>
+          <div id="vertical-rod"></div>
+        </div>
+        <div id="container-three">
+          <div id="three"></div>
+          <div id="three"></div>
+          <div id="three"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
